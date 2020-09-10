@@ -1,0 +1,7 @@
+cv::Mat AzureKinectDevice::K4a2Mat(k4a::image rgb)
+{
+	int hight = k4a_image_get_height_pixels(rgb.handle());
+	int width = k4a_image_get_width_pixels(rgb.handle());
+	cv::Mat Color_frame = cv::Mat(hight, width, CV_8UC4, k4a_image_get_buffer(rgb.handle())).clone();
+	return Color_frame;
+}
