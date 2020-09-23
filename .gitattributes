@@ -12,8 +12,8 @@
 * -text
 
 # Ensure GitHub detects our C++ code as C++ code.
-/Convert-KinectDK-k4a-image-to-Texture2D-for-UnrealEngine-4.25/inc/** linguist-language=C++
-/Convert-KinectDK-k4a-image-to-Texture2D-for-UnrealEngine-4.25/src/** linguist-language=C++
+/Convert-KinectDK-k4a-image-to-Texture2D-for-UnrealEngine-4.25/** linguist-language=C++
+/UEBoy2019/Convert-KinectDK-k4a-image-to-Texture2D-for-UnrealEngine-4.25/** linguist-language=C++
 
 # Ensure GitHub detects our Perl legacy test harness code as Perl code instead of Raku.
 *.pl linguist-language=Perl
