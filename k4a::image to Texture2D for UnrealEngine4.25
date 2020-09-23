@@ -1,0 +1,12 @@
+void AzureKinectDevice::k4a2TextureRGB(k4a::image inImg)
+{
+
+	uint8_t* data = inImg.get_buffer();
+	int T_Width = inImg.get_width_pixels();
+	int T_height = inImg.get_height_pixels();
+	UTexture2D* NewTexture = UTexture2D::CreateTransient((int32)T_Width, (int32)T_height);
+	void* Datas = NewTexture->PlatformData->Mips[0].BulkData.Lock(LOCK_READ_WRITE);
+	FMemory::Memcpy(Datas, data, inImg.get_size());
+	NewTexture->PlatformData->Mips[0].BulkData.Unlock();
+	NewTexture->UpdateResource();
+}
