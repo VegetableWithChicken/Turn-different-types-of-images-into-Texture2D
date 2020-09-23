@@ -5,3 +5,15 @@
 *.css linguist-language=HTML
 *.html linguist-language=HTML
 *.py linguist-language=python
+# Copyright (c) Microsoft Corporation.
+# SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+
+# Disable CRLF-mapping for all files.
+* -text
+
+# Ensure GitHub detects our C++ code as C++ code.
+/Convert-KinectDK-k4a-image-to-Texture2D-for-UnrealEngine-4.25/inc/** linguist-language=C++
+/Convert-KinectDK-k4a-image-to-Texture2D-for-UnrealEngine-4.25/src/** linguist-language=C++
+
+# Ensure GitHub detects our Perl legacy test harness code as Perl code instead of Raku.
+*.pl linguist-language=Perl
