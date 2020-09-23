@@ -1,0 +1,7 @@
+*.h linguist-language=c++
+*.cpp linguist-language=c++
+*.hpp linguist-language=c++
+*.js linguist-language=HTML
+*.css linguist-language=HTML
+*.html linguist-language=HTML
+*.py linguist-language=python
