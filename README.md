@@ -1,4 +1,4 @@
-# k4a_image_t-to-UTexture2D
+# k4a::image to Texture2D
 # AzureKinectDK
 # RealSense D435 D435i
 How to convert k4a::imge(k4a_image_t) to UTexture2D
