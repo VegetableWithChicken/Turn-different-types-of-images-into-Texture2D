@@ -3,6 +3,8 @@
 *.hpp linguist-language=c++
 *.js linguist-language=HTML
 *.css linguist-language=HTML
+*.uproject linguist-language=BluePrint
+*.uproject linguist-language=ue4
 *.html linguist-language=HTML
 *.py linguist-language=python
 # Copyright (c) Microsoft Corporation.
